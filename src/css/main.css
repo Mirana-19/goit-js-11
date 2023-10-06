@@ -1,0 +1,78 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  overflow: hidden;
+}
+
+.gallery {
+  margin-top: 30px;
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 3px;
+  height: 50px;
+}
+
+.photo-card {
+  margin-top: 20px;
+  text-align: center;
+  width: 300px;
+  overflow: hidden;
+
+  border-radius: 5px;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+
+  background-color: #4267b2;
+  border-radius: 5px;
+}
+
+.load-more {
+  margin: 20px auto 0 auto;
+  display: block;
+  margin-top: 15px;
+  width: 120px;
+  padding: 8px;
+
+  border-style: none;
+  background-color: #4267b2;
+  color: white;
+  border-radius: 5px;
+
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+p {
+  margin: 0;
+}
