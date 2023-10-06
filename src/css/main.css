@@ -19,6 +19,12 @@
 a {
   overflow: hidden;
 }
+p {
+  margin: 0;
+}
+button {
+  cursor: pointer;
+}
 
 .gallery {
   margin-top: 30px;
@@ -72,8 +78,4 @@ a {
   box-shadow:
     0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-p {
-  margin: 0;
 }
