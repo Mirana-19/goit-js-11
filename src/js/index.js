@@ -25,7 +25,7 @@ getImages('cat', 2);
 
 function onLoadMoreBtn(e) {
   page += 1;
-  console.log(e);
+
   makeRequest();
 }
 
