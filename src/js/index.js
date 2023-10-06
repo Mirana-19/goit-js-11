@@ -34,7 +34,7 @@ function onLoadMoreBtn(e) {
 }
 
 async function makeRequest() {
-  const query = refs.form.elements.searchQuery.value;
+  const query = refs.form.elements.searchQuery.value.trim();
   const responce = await getImages(query, page);
   const images = responce.data.hits;
   const imagesQuantity = responce.data.totalHits;
@@ -58,11 +58,9 @@ async function makeRequest() {
     renderGalleryCards(images);
 
     if (images.length < imagesPerPage) {
-      setTimeout(() => {
-        Notiflix.Notify.failure(
-          "We're sorry, but you've reached the end of search results."
-        );
-      }, 1000);
+      Notiflix.Notify.failure(
+        "We're sorry, but you've reached the end of search results."
+      );
     }
 
     new SimpleLightbox('.gallery a', {});
